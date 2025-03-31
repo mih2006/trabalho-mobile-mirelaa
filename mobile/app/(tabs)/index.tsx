@@ -22,26 +22,22 @@ export default function HomeScreen() {
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">O que são as estrelas?</ThemedText>
         <ThemedText>
-          <ThemedText type="defaultSemiBold">As Estrelas são corpos celestes com luz própria. Elas são, na verdade, esferas gigantes compostas de gases que produzem reações nucleares de fusão, mas, graças à gravidade, podem se manter vivas (sem se explodir) por trilhões de anos.
-
-Assim, além de luz, elas emitem energia na forma de calor, que se propaga na forma de radiação pelo espaço.
-
-Só na nossa galáxia — a Via-Láctea — as estimativas apontam entre cem e quatrocentos bilhões de estrelas. O Sol, única estrela em nosso sistema planetário, é uma delas.</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
+          <ThemedText type="defaultSemiBold"></ThemedText>{' '}
+              <h4>As estrelas são corpos celestes que emitem luz e calor devido a reações nucleares que ocorrem em seus núcleos. Elas são fundamentais para a estrutura e evolução do universo, desempenhando um papel crucial na formação de elementos químicos e na criação de condições que podem suportar a vida. Neste texto, exploraremos a definição, a composição, a estrutura, os tipos, o ciclo de vida e a importância das estrelas.</h4>          <ThemedText type="defaultSemiBold">
             {Platform.select({
               ios: 'cmd + d',
               android: 'cmd + m',
-              web: 'F12'
+              web: ''
             })}
           </ThemedText>{' '}
-          to open developer tools.
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
+        <ThemedText type="subtitle">Formação das estrelas</ThemedText>
         <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
+        <h4>A formação das estrelas é um processo que ocorre em várias etapas ao longo de milhões de anos. Tudo começa em nuvens moleculares, que são aglomerados densos de gás e poeira, principalmente hidrogênio e hélio. Quando uma parte dessas nuvens se torna suficientemente densa, a gravidade faz com que ela colapse, formando uma protostar, que é uma estrela em formação.</h4>
+        <h4>Durante a fase de protostar, a temperatura e a pressão no núcleo aumentam até que a fusão nuclear comece, transformando hidrogênio em hélio e liberando energia. Essa transição marca a entrada da estrela na fase de sequência principal, onde permanece por bilhões de anos, equilibrando a pressão da radiação gerada pela fusão com a força gravitacional que tenta colapsá-la.</h4>
+        <h4>Estrelas de baixa massa, como o Sol, eventualmente se tornam gigantes vermelhas e, em seguida, anãs brancas. Estrelas de alta massa podem explodir em supernovas, dispersando elementos pesados no espaço. Esses elementos enriquecem o meio interestelar, permitindo a formação de novas estrelas e sistemas planetários, criando um ciclo contínuo de nascimento e morte estelar que molda a evolução do universo. Assim, as estrelas não apenas iluminam o cosmos, mas também são fundamentais para a criação de novos sistemas e a química do universo.</h4>
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
