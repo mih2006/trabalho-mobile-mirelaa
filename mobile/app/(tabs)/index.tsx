@@ -42,19 +42,21 @@ export default function HomeScreen() {
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
+        <ThemedText type="subtitle">Vida e morte das estrelas</ThemedText>
         <ThemedText>
-          <h4></h4>
-          <h4></h4>
-          <h4></h4>
+          <h4>As estrelas se formam, amadurecem e deixam de existir como a maioria dos corpos celestes do Universo. O ciclo de vida de uma estrela pode ter duração de milhões ou bilhões de anos. Uma característica que todas elas apresentam, no entanto, é o fato de a sua fase madura corresponder a cerca de 90% de todo esse ciclo.</h4>
+          <h4>A maneira como uma estrela evolui até a sua morte varia de acordo com a massa, diretamente relacionada com a presença de gás combustível em sua estrutura para a continuidade das reações químicas do núcleo. Quando essas reações consistem na fusão do hidrogênio para a composição do hélio, caracteriza-se esses astros como estrelas de sequência principal. Nesse caso, o hidrogênio vai sendo consumido até se esgotar, fazendo com que o núcleo colapse e a parte externa da estrela se expanda até que ela se torne uma gigante vermelha.</h4>
+          <h4>A partir de então, as etapas que seguem dependem diretamente da massa da estrela. Nas estrelas medianas e pouco massivas, a atividade no núcleo continuará, porém dando origem a átomos de carbono originários da fusão do hélio. Quando este chega ao fim, toda a massa da estrela dá origem a uma nebulosa planetária. O núcleo, por sua vez, origina uma anã branca.</h4>
+          <h4>No caso das estrelas massivas, que apresentam pelo menos sete vezes a massa do Sol, ocorre a formação das supergigantes vermelhas. Seu núcleo dá início a reações que resultam na formação de elementos como o ferro, cuja produção demanda uma enorme quantidade de energia. Em decorrência disso, a estrela retrai como reação da própria gravidade e, logo em seguida, se expande de maneira violenta por meio de uma explosão chamada de supernova.</h4>
+          <h4>A maior parte dos seus materiais fica no espaço, mas cerca de 25% darão origem a uma estrela de nêutrons ou a um buraco negro, o que depende da massa propriamente dita. Originam buracos negros somente as estrelas supermassivas.</h4>
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
+        <ThemedText type="subtitle">Qual é o número de estrelas do céu?</ThemedText>
         <ThemedText>
-          <h4></h4>
-          <h4></h4>
-          <h4></h4>
+          <h4>Apesar de parecer simples, essa é uma pergunta extremamente difícil de responder, simplesmente por que não é possível contar um número tão grande de forma direta. Estima-se, entretanto, que existam pelo menos 1010 galáxias no Universo observável, que podem conter alguns bilhões de estrelas.</h4>
+          <h4>Em nossa galáxia, a via láctea, e também em nossa vizinha mais próxima, a galáxia de Andrômeda, por exemplo, existem pelo menos 100 bilhões de estrelas, em razão disso, as estimativas dos astrônomos indicam que devam existir pelo menos 1021 estrelas em todo o Universo.</h4>
+          <h4>Apesar do enorme número de estrelas, uma ínfima parte delas é visível da Terra a olho nu. Daqui, sem o auxílio de qualquer instrumento óptico, só é possível enxergar cerca de 10.000 estrelas.</h4>
         </ThemedText>
       </ThemedView>
     </ParallaxScrollView>

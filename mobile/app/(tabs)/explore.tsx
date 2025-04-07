@@ -20,27 +20,28 @@ export default function TabTwoScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Veja algumas fotos e explicações!!!</ThemedText>
+        <ThemedText type="title">Tipos de estrelas</ThemedText>
       </ThemedView>
-      <ThemedText>This app includes example code to help you get started.</ThemedText>
+      <ThemedText>Existem diversos tipos de estrelas. Essa designação depende de duas coisas: da classificação espectral, que diz respeito à temperatura da estrela e ao tamanho e massa da estrela. A classificação espectral é dada em cores. Em ordem crescente de temperatura, temos as estrelas vermelhas, laranjas, amarelas, amarelas-brancas, brancas, azuis-brancas e azuis.</ThemedText>
       <Collapsible title="File-based routing">
         <ThemedText>
           This app has two screens:{' '}
           <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
           <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
         </ThemedText>
+        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
         <ThemedText>
           The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
           sets up the tab navigator.
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/router/introduction">
-        </ExternalLink>
+        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
       </Collapsible>
       <Collapsible title="Android, iOS, and web support">
         <ThemedText>
           You can open this project on Android, iOS, and the web. To open the web version, press{' '}
           <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
         </ThemedText>
+        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
       </Collapsible>
       <Collapsible title="Images">
         <ThemedText>
@@ -49,8 +50,6 @@ export default function TabTwoScreen() {
           different screen densities
         </ThemedText>
         <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
-        <ExternalLink href="https://reactnative.dev/docs/images">
-        </ExternalLink>
       </Collapsible>
       <Collapsible title="Custom fonts">
         <ThemedText>
@@ -58,9 +57,8 @@ export default function TabTwoScreen() {
           <ThemedText style={{ fontFamily: 'SpaceMono' }}>
             custom fonts such as this one.
           </ThemedText>
+          <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/versions/latest/sdk/font">
-        </ExternalLink>
       </Collapsible>
       <Collapsible title="Light and dark mode components">
         <ThemedText>
@@ -68,8 +66,7 @@ export default function TabTwoScreen() {
           <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
           what the user's current color scheme is, and so you can adjust UI colors accordingly.
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-        </ExternalLink>
+        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
       </Collapsible>
       <Collapsible title="Animations">
         <ThemedText>
@@ -78,6 +75,7 @@ export default function TabTwoScreen() {
           the powerful <ThemedText type="defaultSemiBold">react-native-reanimated</ThemedText>{' '}
           library to create a waving hand animation.
         </ThemedText>
+        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
         {Platform.select({
           ios: (
             <ThemedText>
