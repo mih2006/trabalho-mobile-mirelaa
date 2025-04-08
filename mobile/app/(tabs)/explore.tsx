@@ -22,65 +22,67 @@ export default function TabTwoScreen() {
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Tipos de estrelas</ThemedText>
       </ThemedView>
-      <ThemedText>Existem diversos tipos de estrelas. Essa designação depende de duas coisas: da classificação espectral, que diz respeito à temperatura da estrela e ao tamanho e massa da estrela. A classificação espectral é dada em cores. Em ordem crescente de temperatura, temos as estrelas vermelhas, laranjas, amarelas, amarelas-brancas, brancas, azuis-brancas e azuis.</ThemedText>
-      <Collapsible title="File-based routing">
+      <ThemedText><h4>Existem diversos tipos de estrelas. Essa designação depende de duas coisas: da classificação espectral, que diz respeito à temperatura da estrela e ao tamanho e massa da estrela. A classificação espectral é dada em cores. Em ordem crescente de temperatura, temos as estrelas vermelhas, laranjas, amarelas, amarelas-brancas, brancas, azuis-brancas e azuis.</h4>
+        <h4>Essa definição de cores diz respeito ao pico de frequência emitida pela estrela e a relacionada à temperatura de emissão de corpo negro. Como as estrelas produzem quase todas as frequências de radiação simultaneamente, ao olho humano todas parecem-se esbranquiçadas ao serem vistas a olho nu.</h4>
+        <h4>Confira alguns dos mais importantes tipos de estrelas que existem:</h4>
+      </ThemedText>
+      <Collapsible title="Estrelas azuis">
         <ThemedText>
-          This app has two screens:{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
+          <ThemedText></ThemedText>
+          <h4>São estrelas extremamente quentes, a temperatura de sua superfície pode atingir 30.000 K, são estrelas muito “novas” em comparação com os demais tipos de estrelas. A maioria dessas estrelas foi criada há menos 40 milhões de anos.</h4>
         </ThemedText>
         <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
         <ThemedText>
-          The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
+        </ThemedText>
+      </Collapsible>
+      <Collapsible title="Anãs amarelas">
+        <ThemedText>
+          <ThemedText type="defaultSemiBold">
+            <h4>Assim como o Sol, essas estrelas são muito antigas, existindo há bilhões de anos. O futuro dessas estrelas é o de se tornar uma gigante vermelha.</h4>
+            </ThemedText> 
         </ThemedText>
         <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
       </Collapsible>
-      <Collapsible title="Android, iOS, and web support">
+      <Collapsible title="Anãs vermelhas">
         <ThemedText>
-          You can open this project on Android, iOS, and the web. To open the web version, press{' '}
-          <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
+          <ThemedText type="defaultSemiBold">
+            <h4> São as estrelas mais comuns, representam cerca de 73% das estrelas do Universo. Seu brilho é fraco, são estrelas pouco massivas.</h4>
+            </ThemedText>
+          <ThemedText type="defaultSemiBold">
+          </ThemedText>
         </ThemedText>
         <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
       </Collapsible>
-      <Collapsible title="Images">
+      <Collapsible title="Gigantes azuis">
         <ThemedText>
-          For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
-          different screen densities
-        </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
-      </Collapsible>
-      <Collapsible title="Custom fonts">
-        <ThemedText>
-          Open <ThemedText type="defaultSemiBold">app/_layout.tsx</ThemedText> to see how to load{' '}
+          <ThemedText type="defaultSemiBold">
+            <h4>São estrelas de temperaturas superiores a 10.000 K, muito massivas, podendo apresentar até 250 vezes a massa do Sol.</h4>
+            </ThemedText>
           <ThemedText style={{ fontFamily: 'SpaceMono' }}>
-            custom fonts such as this one.
           </ThemedText>
           <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
         </ThemedText>
       </Collapsible>
-      <Collapsible title="Light and dark mode components">
+      <Collapsible title="Supergigantes azuis">
         <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
-          what the user's current color scheme is, and so you can adjust UI colors accordingly.
-        </ThemedText>
+        <ThemedText type="defaultSemiBold">
+          <h4>são muito massivas e brilhantes, apresentando temperaturas extremamente elevadas, variando entre 10.000 K e 50.000 K, no caso das supergigantes. Estas podem apresentar até 25 vezes a massa do Sol. Pela intensa atividade que ocorre em seu núcleo, são também estrelas muito jovens e com curto ciclo de vida.</h4>
+          </ThemedText> 
+          </ThemedText>
         <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
       </Collapsible>
-      <Collapsible title="Animations">
+      <Collapsible title="Anãs brancas">
         <ThemedText>
-          This template includes an example of an animated component. The{' '}
-          <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses
-          the powerful <ThemedText type="defaultSemiBold">react-native-reanimated</ThemedText>{' '}
-          library to create a waving hand animation.
+          <ThemedText type="defaultSemiBold">
+          <h4>Essas estrelas são formadas pelos núcleos de outras estrelas que ejetaram suas camadas externas, essas estrelas já não produzem mais fusões nucleares e comumente rotacionam em torno de seus eixos com velocidades muito altas.</h4>
+            </ThemedText>
+          <ThemedText type="defaultSemiBold"></ThemedText>{' '}
         </ThemedText>
         <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
         {Platform.select({
           ios: (
             <ThemedText>
-              The <ThemedText type="defaultSemiBold">components/ParallaxScrollView.tsx</ThemedText>{' '}
-              component provides a parallax effect for the header image.
+              The <ThemedText type="defaultSemiBold"></ThemedText>{' '}
             </ThemedText>
           ),
         })}
