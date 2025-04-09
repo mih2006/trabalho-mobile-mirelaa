@@ -31,7 +31,7 @@ export default function TabTwoScreen() {
           <ThemedText></ThemedText>
           <h4>São estrelas extremamente quentes, a temperatura de sua superfície pode atingir 30.000 K, são estrelas muito “novas” em comparação com os demais tipos de estrelas. A maioria dessas estrelas foi criada há menos 40 milhões de anos.</h4>
         </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
+        <Image source={require('@/assets/images/estrelaazul.jpg')} style={{ alignSelf: 'center', height: 1000 , width: 50 }} />
         <ThemedText>
         </ThemedText>
       </Collapsible>
