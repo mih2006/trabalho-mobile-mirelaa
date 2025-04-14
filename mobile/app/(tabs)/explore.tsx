@@ -12,10 +12,7 @@ export default function TabTwoScreen() {
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
       headerImage={
-        <IconSymbol
-          size={310}
-          color="#808080"
-          name="chevron.left.forwardslash.chevron.right"
+        <Image source={require('@/assets/images/fundo2.jpg')}
           style={styles.headerImage}
         />
       }>
@@ -31,7 +28,7 @@ export default function TabTwoScreen() {
           <ThemedText></ThemedText>
           <h4>São estrelas extremamente quentes, a temperatura de sua superfície pode atingir 30.000 K, são estrelas muito “novas” em comparação com os demais tipos de estrelas. A maioria dessas estrelas foi criada há menos 40 milhões de anos.</h4>
         </ThemedText>
-        <Image source={require('@/assets/images/estrelaazul.jpg')} style={{ alignSelf: 'center', height: 1000 , width: 50 }} />
+        <Image source={require('@/assets/images/estrelaazul.jpg')} style={{ alignSelf: 'center', height: 300 , width: 300 }} />
         <ThemedText>
         </ThemedText>
       </Collapsible>
@@ -41,7 +38,7 @@ export default function TabTwoScreen() {
             <h4>Assim como o Sol, essas estrelas são muito antigas, existindo há bilhões de anos. O futuro dessas estrelas é o de se tornar uma gigante vermelha.</h4>
             </ThemedText> 
         </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
+        <Image source={require('@/assets/images/estrelaamarela.jpg')} style={{ alignSelf: 'center', height: 300 , width: 300 }} />
       </Collapsible>
       <Collapsible title="Anãs vermelhas">
         <ThemedText>
@@ -51,7 +48,7 @@ export default function TabTwoScreen() {
           <ThemedText type="defaultSemiBold">
           </ThemedText>
         </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
+        <Image source={require('@/assets/images/estrelavermelha.jpg')} style={{ alignSelf: 'center', height: 300 , width: 300 }} />
       </Collapsible>
       <Collapsible title="Gigantes azuis">
         <ThemedText>
@@ -60,7 +57,7 @@ export default function TabTwoScreen() {
             </ThemedText>
           <ThemedText style={{ fontFamily: 'SpaceMono' }}>
           </ThemedText>
-          <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
+          <Image source={require('@/assets/images/giganteazul.jpg')} style={{ alignSelf: 'center' , height: 300 , width: 300 }} />
         </ThemedText>
       </Collapsible>
       <Collapsible title="Supergigantes azuis">
@@ -69,7 +66,7 @@ export default function TabTwoScreen() {
           <h4>são muito massivas e brilhantes, apresentando temperaturas extremamente elevadas, variando entre 10.000 K e 50.000 K, no caso das supergigantes. Estas podem apresentar até 25 vezes a massa do Sol. Pela intensa atividade que ocorre em seu núcleo, são também estrelas muito jovens e com curto ciclo de vida.</h4>
           </ThemedText> 
           </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
+        <Image source={require('@/assets/images/superazul.jpg')} style={{ alignSelf: 'center', height: 300 , width: 300 }} />
       </Collapsible>
       <Collapsible title="Anãs brancas">
         <ThemedText>
@@ -78,7 +75,7 @@ export default function TabTwoScreen() {
             </ThemedText>
           <ThemedText type="defaultSemiBold"></ThemedText>{' '}
         </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
+        <Image source={require('@/assets/images/estrelabranca.jpg')} style={{ alignSelf: 'center', height: 300 , width: 300 }} />
         {Platform.select({
           ios: (
             <ThemedText>
