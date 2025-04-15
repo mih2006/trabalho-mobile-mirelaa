@@ -7,6 +7,8 @@ import { IconSymbol } from '@/components/ui/IconSymbol';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
+import AntDesign from '@expo/vector-icons/AntDesign';
+import Octicons from '@expo/vector-icons/Octicons';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -30,14 +32,14 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'inicio',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          tabBarIcon: ({ color }) => <AntDesign name="star" size={24} color={color} />,
         }}
       />
       <Tabs.Screen
         name="explore"
         options={{
           title: 'descubra',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          tabBarIcon: ({ color }) => <Octicons name="moon" size={24} color={color} />,
         }}
       />
     </Tabs>
