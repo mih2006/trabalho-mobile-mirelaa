@@ -4,8 +4,33 @@ import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 export default function HomeScreen() {
+  const [apodImage, setApodImage] = useState(null); // Para armazenar a imagem da NASA
+  const [loading, setLoading] = useState(true); // Para gerenciar o estado de carregamento
+
+  // Função para pegar a imagem da NASA (APOD)
+  useEffect(() => {
+    const fetchImage = async () => {
+      try {
+        const response = await axios.get('https://api.nasa.gov/planetary/apod', {
+          params: {
+            api_key: 'dfumIbeYm8iY1KYCj2g9SMIde43sZtAYcgMVEPjY', // Substitua com a sua chave API
+          },
+        });
+        setApodImage(response.data.url); // Salvando a URL da imagem
+      } catch (error) {
+        console.error('Error fetching image from NASA API:', error);
+      } finally {
+        setLoading(false); // Finaliza o carregamento
+      }
+    };
+
+    fetchImage();
+  }, []);
+
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
@@ -19,6 +44,17 @@ export default function HomeScreen() {
         <ThemedText type="title">Seja bem-vindo, vamos falar um pouco sobre as estrelas!</ThemedText>
         <HelloWave />
       </ThemedView>
+      {!loading && apodImage ? (
+        <ThemedView style={styles.apodContainer}>
+          <ThemedText style={styles.apodTitle}>Imagem do dia da NASA</ThemedText>
+          <Image
+            source={{ uri: apodImage }}
+            style={styles.apodImage}
+          />
+        </ThemedView>
+      ) : (
+        <ThemedText style={styles.loadingText}>Carregando imagem...</ThemedText>
+      )}
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">O que são as estrelas?</ThemedText>
         <ThemedText>
@@ -63,7 +99,7 @@ export default function HomeScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({ 
   titleContainer: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -79,5 +115,25 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     position: 'absolute',
+  },
+  apodContainer: {
+    alignItems: 'center',
+    marginBottom: 16,
+  },
+  apodTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginBottom: 8,
+  },
+  apodImage: {
+    width: '100%',
+    height: 250,
+    borderRadius: 10,
+    resizeMode: 'contain',
+  },
+  loadingText: {
+    fontSize: 16,
+    color: '#888',
+    textAlign: 'center',
   },
 });
