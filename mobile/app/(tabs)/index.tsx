@@ -8,23 +8,22 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 export default function HomeScreen() {
-  const [apodImage, setApodImage] = useState(null); // Para armazenar a imagem da NASA
-  const [loading, setLoading] = useState(true); // Para gerenciar o estado de carregamento
+  const [apodImage, setApodImage] = useState(null); 
+  const [loading, setLoading] = useState(true); 
 
-  // Função para pegar a imagem da NASA (APOD)
   useEffect(() => {
     const fetchImage = async () => {
       try {
         const response = await axios.get('https://api.nasa.gov/planetary/apod', {
           params: {
-            api_key: 'dfumIbeYm8iY1KYCj2g9SMIde43sZtAYcgMVEPjY', // Substitua com a sua chave API
+            api_key: 'dfumIbeYm8iY1KYCj2g9SMIde43sZtAYcgMVEPjY',
           },
         });
-        setApodImage(response.data.url); // Salvando a URL da imagem
+        setApodImage(response.data.url); 
       } catch (error) {
         console.error('Error fetching image from NASA API:', error);
       } finally {
-        setLoading(false); // Finaliza o carregamento
+        setLoading(false); 
       }
     };
 
@@ -110,8 +109,8 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   reactLogo: {
-    height: 300,
-    width: 400,
+    height: 290,
+    width: 500,
     bottom: 0,
     left: 0,
     position: 'absolute',
