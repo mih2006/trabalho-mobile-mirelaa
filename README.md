@@ -313,13 +313,13 @@ Este projeto está licenciado sob os termos da licença MIT.
 ---
 
 
-![Imagem do App](mobile\assets\images\print.png)
-![Imagem do App](mobile\assets\images\print2.png)
-![Imagem do App](mobile\assets\images\print3.png)
-![Imagem do App](mobile\assets\images\print4.png)
-![Imagem do App](mobile\assets\images\print5.png)
-![Imagem do App](mobile\assets\images\print6.png)
-![Imagem do App](mobile\assets\images\print7.png)
-![Imagem do App](mobile\assets\images\print8.png)
-![Imagem do App](mobile\assets\images\print9.png)
-![Imagem do App](mobile\assets\images\print10.png)
+![Imagem do App](mobile/assets/images/print.png)  
+![Imagem do App](mobile/assets/images/print2.png)  
+![Imagem do App](mobile/assets/images/print3.png)  
+![Imagem do App](mobile/assets/images/print4.png)  
+![Imagem do App](mobile/assets/images/print5.png)  
+![Imagem do App](mobile/assets/images/print6.png)  
+![Imagem do App](mobile/assets/images/print7.png)  
+![Imagem do App](mobile/assets/images/print8.png)  
+![Imagem do App](mobile/assets/images/print9.png)  
+![Imagem do App](mobile/assets/images/print10.png)
